@@ -1,3 +1,20 @@
+const express = require("express");
+const helmet = require("helmet");
+const cors = require("cors");
+
+const apiRouter = require("./apiRouter");
+
+const port = process.env.PORT || 5000;
+const server = express();
+server.use(cors());
+server.use(helmet());
+
+server.use("/api", apiRouter);
+
+server.use((req, res) => res.status(404).send(`There is no route available for ${req.path}`));
+
+
+server.listen(port, () => console.log("Server listening on port:", port));
 /*
 play this: https://www.youtube.com/watch?v=d-diB65scQU
 
@@ -12,3 +29,5 @@ I need this code, but don't know where, perhaps should make some middleware, don
 
 Go code!
 */
+
+
