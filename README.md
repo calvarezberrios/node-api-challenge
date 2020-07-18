@@ -1,5 +1,7 @@
 # Sprint Challenge: Express and Node.js - Projects & Actions
 
+Stretch React App on [React App](https://github.com/calvarezberrios/node-api-challenge-stretch-react-app)
+
 ## Description
 
 In this challenge, you design and create a web API to manage the following resources: `Projects` and `Actions`.
