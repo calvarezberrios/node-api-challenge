@@ -1,5 +1,7 @@
 # Sprint Challenge: Express and Node.js - Projects & Actions
 
+Stretch React App on [React App](https://github.com/calvarezberrios/node-api-challenge-stretch-react-app)
+
 ## Description
 
 In this challenge, you design and create a web API to manage the following resources: `Projects` and `Actions`.
@@ -38,15 +40,40 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-- [ ] Mention two parts of Express that you learned about this week.
+- [x] Mention two parts of Express that you learned about this week.
 
-- [ ] Describe Middleware?
+    ```js
+        // Routing and Middleware
+    ```
 
-- [ ] Describe a Resource?
+- [x] Describe Middleware?
 
-- [ ] What can the API return to help clients know if a request was successful?
+    ```js
+        // functions that use the request and response objects to perform the desired 
+        // action on the api call 
+    ```
 
-- [ ] How can we partition our application into sub-applications?
+- [x] Describe a Resource?
+
+    ```js
+        // a resource is the middleware function pointing to a URL/URI to perform an 
+        // action by the server method (GET, PUT, DELETE, PATCH, POST, ETC...)
+    ```
+
+- [x] What can the API return to help clients know if a request was successful?
+
+    ```js
+        //a status code of 200 or other success codes as per HTTP Status Codes, for example:
+        res.status(200).send("String Message or JSON Object Here!");
+    ```
+
+- [x] How can we partition our application into sub-applications?
+
+    ```js
+        // by using the routing capabilities of express and organizing the 
+        // endpoints by specific files for each section, such as a js file for 
+        // users endpoints and a js file for posts  endpoints
+    ```
 
 ## Minimum Viable Product
 
