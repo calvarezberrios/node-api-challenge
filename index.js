@@ -11,7 +11,7 @@ server.use(helmet());
 
 server.use("/api", apiRouter);
 
-server.use((req, res) => res.status(404).send(`There is no route available for ${req.path}`));
+server.use((req, res) => res.status(404).send(`There is no ${req.method} method for ${req.path}`));
 
 
 server.listen(port, () => console.log("Server listening on port:", port));
